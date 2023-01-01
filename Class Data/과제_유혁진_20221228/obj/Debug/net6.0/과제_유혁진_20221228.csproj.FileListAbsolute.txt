@@ -1,0 +1,15 @@
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\bin\Debug\net6.0\과제_유혁진_20221228.exe
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\bin\Debug\net6.0\과제_유혁진_20221228.deps.json
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\bin\Debug\net6.0\과제_유혁진_20221228.runtimeconfig.json
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\bin\Debug\net6.0\과제_유혁진_20221228.dll
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\bin\Debug\net6.0\과제_유혁진_20221228.pdb
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.csproj.AssemblyReference.cache
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.GeneratedMSBuildEditorConfig.editorconfig
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.AssemblyInfoInputs.cache
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.AssemblyInfo.cs
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.csproj.CoreCompileInputs.cache
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.dll
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\refint\과제_유혁진_20221228.dll
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.pdb
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\과제_유혁진_20221228.genruntimeconfig.cache
+C:\HyeokJin96\Work Data\과제_유혁진_20221228\obj\Debug\net6.0\ref\과제_유혁진_20221228.dll

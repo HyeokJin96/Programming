@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHAPTER 02. 세 개의 정수 중에서 큰 수 찾기", "CHAPTER 02. 세 개의 정수 중에서 큰 수 찾기.csproj", "{F6FC0536-B0A4-4047-AD0A-800DC6CA5C53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6FC0536-B0A4-4047-AD0A-800DC6CA5C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FC0536-B0A4-4047-AD0A-800DC6CA5C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FC0536-B0A4-4047-AD0A-800DC6CA5C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FC0536-B0A4-4047-AD0A-800DC6CA5C53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2B5739F-3FC8-4A5D-84F5-98C23C61E1B9}
+	EndGlobalSection
+EndGlobal

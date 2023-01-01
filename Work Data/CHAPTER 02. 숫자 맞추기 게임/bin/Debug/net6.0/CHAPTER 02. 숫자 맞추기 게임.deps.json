@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CHAPTER 02. 숫자 맞추기 게임/1.0.0": {
+        "runtime": {
+          "CHAPTER 02. 숫자 맞추기 게임.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CHAPTER 02. 숫자 맞추기 게임/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\bin\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.exe
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\bin\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.deps.json
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\bin\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.runtimeconfig.json
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\bin\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.dll
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\bin\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.pdb
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.csproj.AssemblyReference.cache
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.AssemblyInfoInputs.cache
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.AssemblyInfo.cs
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.csproj.CoreCompileInputs.cache
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.dll
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\refint\CHAPTER 02. 도형의 면적 계산하기.dll
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.pdb
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\CHAPTER 02. 도형의 면적 계산하기.genruntimeconfig.cache
+D:\Programming\CHAPTER 02. 도형의 면적 계산하기\obj\Debug\net6.0\ref\CHAPTER 02. 도형의 면적 계산하기.dll

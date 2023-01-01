@@ -1,0 +1,15 @@
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\bin\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.exe
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\bin\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.deps.json
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\bin\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.runtimeconfig.json
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\bin\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.dll
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\bin\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.pdb
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.csproj.AssemblyReference.cache
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.AssemblyInfoInputs.cache
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.AssemblyInfo.cs
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.csproj.CoreCompileInputs.cache
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.dll
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\refint\CHAPTER 02. 자음과 모음 개수 세기.dll
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.pdb
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\CHAPTER 02. 자음과 모음 개수 세기.genruntimeconfig.cache
+D:\Programming\CHAPTER 02. 자음과 모음 개수 세기\obj\Debug\net6.0\ref\CHAPTER 02. 자음과 모음 개수 세기.dll

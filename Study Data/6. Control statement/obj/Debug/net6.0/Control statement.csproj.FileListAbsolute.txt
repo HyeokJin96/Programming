@@ -1,0 +1,30 @@
+D:\Programming\Study Data\Control statement\bin\Debug\net6.0\Control statement.exe
+D:\Programming\Study Data\Control statement\bin\Debug\net6.0\Control statement.deps.json
+D:\Programming\Study Data\Control statement\bin\Debug\net6.0\Control statement.runtimeconfig.json
+D:\Programming\Study Data\Control statement\bin\Debug\net6.0\Control statement.dll
+D:\Programming\Study Data\Control statement\bin\Debug\net6.0\Control statement.pdb
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.csproj.AssemblyReference.cache
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.AssemblyInfoInputs.cache
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.AssemblyInfo.cs
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.csproj.CoreCompileInputs.cache
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.dll
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\refint\Control statement.dll
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.pdb
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\Control statement.genruntimeconfig.cache
+D:\Programming\Study Data\Control statement\obj\Debug\net6.0\ref\Control statement.dll
+D:\Programming\Study Data\6. Control statement\bin\Debug\net6.0\Control statement.exe
+D:\Programming\Study Data\6. Control statement\bin\Debug\net6.0\Control statement.deps.json
+D:\Programming\Study Data\6. Control statement\bin\Debug\net6.0\Control statement.runtimeconfig.json
+D:\Programming\Study Data\6. Control statement\bin\Debug\net6.0\Control statement.dll
+D:\Programming\Study Data\6. Control statement\bin\Debug\net6.0\Control statement.pdb
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.csproj.AssemblyReference.cache
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.AssemblyInfoInputs.cache
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.AssemblyInfo.cs
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.csproj.CoreCompileInputs.cache
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.dll
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\refint\Control statement.dll
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.pdb
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\Control statement.genruntimeconfig.cache
+D:\Programming\Study Data\6. Control statement\obj\Debug\net6.0\ref\Control statement.dll

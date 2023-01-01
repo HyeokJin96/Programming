@@ -1,0 +1,15 @@
+D:\Programming\Work Data\CHAPTER 01. Exercise\bin\Debug\net6.0\CHAPTER 01. Exercise.exe
+D:\Programming\Work Data\CHAPTER 01. Exercise\bin\Debug\net6.0\CHAPTER 01. Exercise.deps.json
+D:\Programming\Work Data\CHAPTER 01. Exercise\bin\Debug\net6.0\CHAPTER 01. Exercise.runtimeconfig.json
+D:\Programming\Work Data\CHAPTER 01. Exercise\bin\Debug\net6.0\CHAPTER 01. Exercise.dll
+D:\Programming\Work Data\CHAPTER 01. Exercise\bin\Debug\net6.0\CHAPTER 01. Exercise.pdb
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.csproj.AssemblyReference.cache
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.AssemblyInfoInputs.cache
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.AssemblyInfo.cs
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.csproj.CoreCompileInputs.cache
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.dll
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\refint\CHAPTER 01. Exercise.dll
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.pdb
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\CHAPTER 01. Exercise.genruntimeconfig.cache
+D:\Programming\Work Data\CHAPTER 01. Exercise\obj\Debug\net6.0\ref\CHAPTER 01. Exercise.dll

@@ -1,0 +1,15 @@
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\bin\Debug\net6.0\CHAPTER 01. 주사위 게임.exe
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\bin\Debug\net6.0\CHAPTER 01. 주사위 게임.deps.json
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\bin\Debug\net6.0\CHAPTER 01. 주사위 게임.runtimeconfig.json
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\bin\Debug\net6.0\CHAPTER 01. 주사위 게임.dll
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\bin\Debug\net6.0\CHAPTER 01. 주사위 게임.pdb
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.csproj.AssemblyReference.cache
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.AssemblyInfoInputs.cache
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.AssemblyInfo.cs
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.csproj.CoreCompileInputs.cache
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.dll
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\refint\CHAPTER 01. 주사위 게임.dll
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.pdb
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\CHAPTER 01. 주사위 게임.genruntimeconfig.cache
+D:\Programming\Work Data\CHAPTER 01. 주사위 게임\obj\Debug\net6.0\ref\CHAPTER 01. 주사위 게임.dll

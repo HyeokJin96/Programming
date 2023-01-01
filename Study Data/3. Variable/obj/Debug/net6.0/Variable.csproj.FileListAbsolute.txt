@@ -1,0 +1,15 @@
+D:\Programming\Study Data\3. Variable\bin\Debug\net6.0\Variable.exe
+D:\Programming\Study Data\3. Variable\bin\Debug\net6.0\Variable.deps.json
+D:\Programming\Study Data\3. Variable\bin\Debug\net6.0\Variable.runtimeconfig.json
+D:\Programming\Study Data\3. Variable\bin\Debug\net6.0\Variable.dll
+D:\Programming\Study Data\3. Variable\bin\Debug\net6.0\Variable.pdb
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.csproj.AssemblyReference.cache
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.AssemblyInfoInputs.cache
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.AssemblyInfo.cs
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.csproj.CoreCompileInputs.cache
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.dll
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\refint\Variable.dll
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.pdb
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\Variable.genruntimeconfig.cache
+D:\Programming\Study Data\3. Variable\obj\Debug\net6.0\ref\Variable.dll

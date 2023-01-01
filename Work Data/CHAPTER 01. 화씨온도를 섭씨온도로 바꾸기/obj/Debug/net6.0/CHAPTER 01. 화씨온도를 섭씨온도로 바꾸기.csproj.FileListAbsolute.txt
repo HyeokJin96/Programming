@@ -1,0 +1,15 @@
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\bin\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.exe
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\bin\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.deps.json
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\bin\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.runtimeconfig.json
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\bin\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.dll
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\bin\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.pdb
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.csproj.AssemblyReference.cache
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.AssemblyInfoInputs.cache
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.AssemblyInfo.cs
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.csproj.CoreCompileInputs.cache
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.dll
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\refint\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.dll
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.pdb
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.genruntimeconfig.cache
+D:\Programming\Work Data\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기\obj\Debug\net6.0\ref\CHAPTER 01. 화씨온도를 섭씨온도로 바꾸기.dll

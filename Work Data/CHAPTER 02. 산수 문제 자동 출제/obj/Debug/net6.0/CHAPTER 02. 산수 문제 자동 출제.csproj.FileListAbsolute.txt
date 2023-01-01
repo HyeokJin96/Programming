@@ -1,0 +1,15 @@
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\bin\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.exe
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\bin\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.deps.json
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\bin\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.runtimeconfig.json
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\bin\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.dll
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\bin\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.pdb
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.csproj.AssemblyReference.cache
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.AssemblyInfoInputs.cache
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.AssemblyInfo.cs
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.csproj.CoreCompileInputs.cache
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.dll
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\refint\CHAPTER 02. 산수 문제 자동 출제.dll
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.pdb
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\CHAPTER 02. 산수 문제 자동 출제.genruntimeconfig.cache
+D:\Programming\CHAPTER 02. 산수 문제 자동 출제\obj\Debug\net6.0\ref\CHAPTER 02. 산수 문제 자동 출제.dll
