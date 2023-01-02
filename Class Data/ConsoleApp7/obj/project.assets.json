@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HyeokJin96\\Work Data\\ConsoleApp7\\ConsoleApp7.csproj",
+      "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp7\\ConsoleApp7.csproj",
       "projectName": "ConsoleApp7",
-      "projectPath": "C:\\HyeokJin96\\Work Data\\ConsoleApp7\\ConsoleApp7.csproj",
+      "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp7\\ConsoleApp7.csproj",
       "packagesPath": "C:\\Users\\KGA_17\\.nuget\\packages\\",
-      "outputPath": "C:\\HyeokJin96\\Work Data\\ConsoleApp7\\obj\\",
+      "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp7\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KGA_17\\AppData\\Roaming\\NuGet\\NuGet.Config",

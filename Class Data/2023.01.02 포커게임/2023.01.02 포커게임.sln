@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2023.01.02 포커게임", "2023.01.02 포커게임.csproj", "{533DB2E6-2158-42EF-97C2-2A67D20B55D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{533DB2E6-2158-42EF-97C2-2A67D20B55D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533DB2E6-2158-42EF-97C2-2A67D20B55D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533DB2E6-2158-42EF-97C2-2A67D20B55D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533DB2E6-2158-42EF-97C2-2A67D20B55D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37B25162-E06D-43D7-A8A8-7555BF562C17}
+	EndGlobalSection
+EndGlobal
