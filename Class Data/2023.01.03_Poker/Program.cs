@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace _2023._01._03_Poker
 {
@@ -25,24 +26,46 @@ namespace _2023._01._03_Poker
             //  5. 컴퓨터가 덱에서 2장의 카드를 추가로 뽑은 후 출력한다.
             //  6. 플레이어가 덱에서 5장의 카드를 뽑은 후 최대 2장의 카드를 교환할지 결정한다.
             //  7. 결과를 출력한다.
-        }
 
-        public void createCard()        //  52장의 카드를 생성하는 함수.
+            Program Poker = new Program();
+            Poker.Computerdeck();
+
+        }       //  Main ()
+
+
+        public void Deck()
         {
-            int[] card = new int[52];
+            int[] trumpcardNumber = new int[52];     //  52장의 카드를 생성
+            string[] trumpcardMark = new string[4] {"♠", "◆", "♥", "♣" };
 
-            for (int i = 0; i < card.Length; i++)
-            {
-                card[i] = i + 1;
-                Console.WriteLine(card[i]);
-            }
-        }
-
-        public void shufflecards(int[] card)       //  52장의 카드를 섞는 함수. -> 덱 생성
-        {
             Random random = new Random();
 
-            card = card.OrderBy(n => Next.random()).ToArray();
+            for (int i = 0; i < trumpcardNumber.Length; i++)     //  생성된 52장의 카드에 숫자를 출력
+            {
+                trumpcardNumber[i] = i + 1;
+            }
+
+            trumpcardNumber = trumpcardNumber.OrderBy(x => random.Next()).ToArray();      //  생성된 52장의 카드를 섞음
+
+            string cardNumber = Math.Ceiling(trumpcardNumber[0] % 13.1).ToString();
+            string cardMark = trumpcardMark[(trumpcardNumber[0] - 1) / 13];
+
+            switch (cardNumber)
+            {
+                case  "1": cardNumber = "A"; break;
+                case "11": cardNumber = "J"; break;
+                case "12": cardNumber = "Q"; break;
+                case "13": cardNumber = "K"; break;
+            }
+
+            Console.WriteLine("{0}, {1}", cardMark, cardNumber);
+
+        }       //  Deck ()
+
+        public void Computerdeck()
+        {
+
         }
-    }
-}
+
+    }       //  class Program
+}       //  namespace

@@ -1,0 +1,15 @@
+D:\Programming\Class Data\2023.01.03_Poker\bin\Debug\net6.0\2023.01.03_Poker.exe
+D:\Programming\Class Data\2023.01.03_Poker\bin\Debug\net6.0\2023.01.03_Poker.deps.json
+D:\Programming\Class Data\2023.01.03_Poker\bin\Debug\net6.0\2023.01.03_Poker.runtimeconfig.json
+D:\Programming\Class Data\2023.01.03_Poker\bin\Debug\net6.0\2023.01.03_Poker.dll
+D:\Programming\Class Data\2023.01.03_Poker\bin\Debug\net6.0\2023.01.03_Poker.pdb
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.csproj.AssemblyReference.cache
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.AssemblyInfoInputs.cache
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.AssemblyInfo.cs
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.csproj.CoreCompileInputs.cache
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.dll
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\refint\2023.01.03_Poker.dll
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.pdb
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\2023.01.03_Poker.genruntimeconfig.cache
+D:\Programming\Class Data\2023.01.03_Poker\obj\Debug\net6.0\ref\2023.01.03_Poker.dll

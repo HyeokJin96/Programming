@@ -14,17 +14,22 @@ namespace CHAPTER_02._사과를_제일_좋아하는_사람찾기
             //  * 먹은 사과의 개수 순으로 출력
 
             string[] names = new string[] { "철수", "영희", "민수", "송희", "진수", "지호", "창호", "한비", "민지", "현지" };
-            int value = 0;
-            int max = 0;
-            int min = 0;
+            int[] value = new int[10];
+            int max = int.MinValue;
+            int min = int.MaxValue;
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < names.Length; i++)
             {
                 Console.Write("{0}가 아침에 먹은 사과의 개수 : ", names[i]);
+                value[i] = Convert.ToInt32(Console.ReadLine());
 
-                for (int j = 0; j < 10; j++)
+                if (value[i] > max)
                 {
-
+                    max = value[i];
+                }
+                if (value[i] < min)
+                {
+                    min = value[i];
                 }
             }
         }

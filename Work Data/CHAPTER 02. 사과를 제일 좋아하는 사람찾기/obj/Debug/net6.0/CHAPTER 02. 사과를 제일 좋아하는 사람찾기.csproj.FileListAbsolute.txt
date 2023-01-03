@@ -13,3 +13,18 @@ D:\Programming\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\
 D:\Programming\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.pdb
 D:\Programming\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.genruntimeconfig.cache
 D:\Programming\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\ref\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.dll
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\bin\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.exe
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\bin\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.deps.json
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\bin\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.runtimeconfig.json
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\bin\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.dll
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\bin\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.pdb
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.csproj.AssemblyReference.cache
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.AssemblyInfoInputs.cache
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.AssemblyInfo.cs
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.csproj.CoreCompileInputs.cache
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.dll
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\refint\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.dll
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.pdb
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.genruntimeconfig.cache
+D:\Programming\Work Data\CHAPTER 02. 사과를 제일 좋아하는 사람찾기\obj\Debug\net6.0\ref\CHAPTER 02. 사과를 제일 좋아하는 사람찾기.dll
