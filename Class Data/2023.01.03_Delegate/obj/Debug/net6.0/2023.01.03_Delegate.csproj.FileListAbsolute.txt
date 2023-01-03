@@ -1,0 +1,15 @@
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\bin\Debug\net6.0\2023.01.03_Delegate.exe
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\bin\Debug\net6.0\2023.01.03_Delegate.deps.json
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\bin\Debug\net6.0\2023.01.03_Delegate.runtimeconfig.json
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\bin\Debug\net6.0\2023.01.03_Delegate.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\bin\Debug\net6.0\2023.01.03_Delegate.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.csproj.AssemblyReference.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.AssemblyInfoInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.AssemblyInfo.cs
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.csproj.CoreCompileInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\refint\2023.01.03_Delegate.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\2023.01.03_Delegate.genruntimeconfig.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.03_Delegate\obj\Debug\net6.0\ref\2023.01.03_Delegate.dll
