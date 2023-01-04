@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\HyeokJin96\\Work Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj": {}
+    "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj": {}
   },
   "projects": {
-    "C:\\HyeokJin96\\Work Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj": {
+    "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\HyeokJin96\\Work Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj",
+        "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj",
         "projectName": "과제_유혁진_20221227",
-        "projectPath": "C:\\HyeokJin96\\Work Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj",
+        "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\과제_유혁진_20221227\\과제_유혁진_20221227.csproj",
         "packagesPath": "C:\\Users\\KGA_17\\.nuget\\packages\\",
-        "outputPath": "C:\\HyeokJin96\\Work Data\\과제_유혁진_20221227\\obj\\",
+        "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\과제_유혁진_20221227\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KGA_17\\AppData\\Roaming\\NuGet\\NuGet.Config",

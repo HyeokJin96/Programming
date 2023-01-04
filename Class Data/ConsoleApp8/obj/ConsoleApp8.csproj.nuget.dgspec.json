@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp8\\ConsoleApp8.csproj": {}
+    "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp8\\ConsoleApp8.csproj": {
+    "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp8\\ConsoleApp8.csproj",
+        "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj",
         "projectName": "ConsoleApp8",
-        "projectPath": "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp8\\ConsoleApp8.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp8\\obj\\",
+        "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj",
+        "packagesPath": "C:\\Users\\KGA_17\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KGA_17\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

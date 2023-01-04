@@ -1,0 +1,15 @@
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\bin\Debug\net6.0\과제_2023.01.04.exe
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\bin\Debug\net6.0\과제_2023.01.04.deps.json
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\bin\Debug\net6.0\과제_2023.01.04.runtimeconfig.json
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\bin\Debug\net6.0\과제_2023.01.04.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\bin\Debug\net6.0\과제_2023.01.04.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.csproj.AssemblyReference.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.AssemblyInfoInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.AssemblyInfo.cs
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.csproj.CoreCompileInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\refint\과제_2023.01.04.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\과제_2023.01.04.genruntimeconfig.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\과제_2023.01.04\obj\Debug\net6.0\ref\과제_2023.01.04.dll
