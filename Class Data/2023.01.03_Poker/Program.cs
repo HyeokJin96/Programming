@@ -28,28 +28,44 @@ namespace _2023._01._03_Poker
             //  7. 결과를 출력한다.
 
             Program Poker = new Program();
-            Poker.Computerdeck();
+            Poker.AAAA();
 
         }       //  Main ()
 
 
-        public void Deck()
-        {
-            int[] trumpcardNumber = new int[52];     //  52장의 카드를 생성
-            string[] trumpcardMark = new string[4] {"♠", "◆", "♥", "♣" };
+        public int[] trumpcardNumber;
+        public string[] trumpcardMark;
 
-            Random random = new Random();
+        public void Createcard()
+        {
+            trumpcardNumber = new int[52];     //  52장의 카드를 생성
+            trumpcardMark = new string[4] {"♠", "◆", "♥", "♣" };        //  문양
 
             for (int i = 0; i < trumpcardNumber.Length; i++)     //  생성된 52장의 카드에 숫자를 출력
             {
                 trumpcardNumber[i] = i + 1;
             }
+        }       //  Createcard ()
+
+        public void Shuffle()
+        {
+            Random random = new Random();
 
             trumpcardNumber = trumpcardNumber.OrderBy(x => random.Next()).ToArray();      //  생성된 52장의 카드를 섞음
 
-            string cardNumber = Math.Ceiling(trumpcardNumber[0] % 13.1).ToString();
-            string cardMark = trumpcardMark[(trumpcardNumber[0] - 1) / 13];
+        }       //  Shuffle ()
 
+        public void KKKK()
+        {
+            for (int i = 0; i < 52; i++)
+            {
+            string cardNumber = Math.Ceiling(trumpcardNumber[i] % 13.1).ToString();
+            string cardMark = trumpcardMark[(trumpcardNumber[i] - 1) / 13];
+            }
+        }
+
+        public void AAAA(string cardNumber, string cardMark)
+        {
             switch (cardNumber)
             {
                 case  "1": cardNumber = "A"; break;
@@ -57,14 +73,7 @@ namespace _2023._01._03_Poker
                 case "12": cardNumber = "Q"; break;
                 case "13": cardNumber = "K"; break;
             }
-
             Console.WriteLine("{0}, {1}", cardMark, cardNumber);
-
-        }       //  Deck ()
-
-        public void Computerdeck()
-        {
-
         }
 
     }       //  class Program

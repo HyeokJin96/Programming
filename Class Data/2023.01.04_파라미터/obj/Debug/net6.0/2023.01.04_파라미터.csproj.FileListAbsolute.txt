@@ -1,0 +1,15 @@
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\bin\Debug\net6.0\2023.01.04_파라미터.exe
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\bin\Debug\net6.0\2023.01.04_파라미터.deps.json
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\bin\Debug\net6.0\2023.01.04_파라미터.runtimeconfig.json
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\bin\Debug\net6.0\2023.01.04_파라미터.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\bin\Debug\net6.0\2023.01.04_파라미터.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.csproj.AssemblyReference.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.AssemblyInfoInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.AssemblyInfo.cs
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.csproj.CoreCompileInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\refint\2023.01.04_파라미터.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\2023.01.04_파라미터.genruntimeconfig.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\2023.01.04_파라미터\obj\Debug\net6.0\ref\2023.01.04_파라미터.dll

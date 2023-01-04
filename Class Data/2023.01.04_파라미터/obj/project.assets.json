@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\2023.01.03_Poker\\2023.01.03_Poker.csproj",
-      "projectName": "2023.01.03_Poker",
-      "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\2023.01.03_Poker\\2023.01.03_Poker.csproj",
+      "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\2023.01.04_파라미터\\2023.01.04_파라미터.csproj",
+      "projectName": "2023.01.04_파라미터",
+      "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\2023.01.04_파라미터\\2023.01.04_파라미터.csproj",
       "packagesPath": "C:\\Users\\KGA_17\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\2023.01.03_Poker\\obj\\",
+      "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\2023.01.04_파라미터\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KGA_17\\AppData\\Roaming\\NuGet\\NuGet.Config",
