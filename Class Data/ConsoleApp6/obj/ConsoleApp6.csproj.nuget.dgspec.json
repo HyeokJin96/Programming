@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj": {}
+    "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj": {
+    "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj",
+        "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj",
         "projectName": "ConsoleApp6",
-        "projectPath": "D:\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\Class Data\\ConsoleApp6\\obj\\",
+        "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp6\\ConsoleApp6.csproj",
+        "packagesPath": "C:\\Users\\KGA_17\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KGA_17\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
