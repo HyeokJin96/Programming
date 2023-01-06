@@ -1,0 +1,15 @@
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\bin\Debug\net6.0\Project. Slay the Spire.exe
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\bin\Debug\net6.0\Project. Slay the Spire.deps.json
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\bin\Debug\net6.0\Project. Slay the Spire.runtimeconfig.json
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\bin\Debug\net6.0\Project. Slay the Spire.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\bin\Debug\net6.0\Project. Slay the Spire.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.csproj.AssemblyReference.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.AssemblyInfoInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.AssemblyInfo.cs
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.csproj.CoreCompileInputs.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\refint\Project. Slay the Spire.dll
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.pdb
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\Project. Slay the Spire.genruntimeconfig.cache
+C:\Users\KGA_17\Documents\Programming\Class Data\프로젝트_Text RPG_Slay the Spire\Project. Slay the Spire\obj\Debug\net6.0\ref\Project. Slay the Spire.dll
