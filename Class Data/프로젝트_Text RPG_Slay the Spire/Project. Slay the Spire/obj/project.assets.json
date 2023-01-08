@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\KGA_17\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\프로젝트_Text RPG_Slay the Spire\\Project. Slay the Spire\\Project. Slay the Spire.csproj",
+      "projectUniqueName": "D:\\Programming\\Class Data\\프로젝트_Text RPG_Slay the Spire\\Project. Slay the Spire\\Project. Slay the Spire.csproj",
       "projectName": "Project. Slay the Spire",
-      "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\프로젝트_Text RPG_Slay the Spire\\Project. Slay the Spire\\Project. Slay the Spire.csproj",
-      "packagesPath": "C:\\Users\\KGA_17\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\프로젝트_Text RPG_Slay the Spire\\Project. Slay the Spire\\obj\\",
+      "projectPath": "D:\\Programming\\Class Data\\프로젝트_Text RPG_Slay the Spire\\Project. Slay the Spire\\Project. Slay the Spire.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\Class Data\\프로젝트_Text RPG_Slay the Spire\\Project. Slay the Spire\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KGA_17\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

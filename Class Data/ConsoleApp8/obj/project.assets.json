@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\KGA_17\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj",
+      "projectUniqueName": "D:\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj",
       "projectName": "ConsoleApp8",
-      "projectPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj",
-      "packagesPath": "C:\\Users\\KGA_17\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KGA_17\\Documents\\Programming\\Class Data\\ConsoleApp8\\obj\\",
+      "projectPath": "D:\\Programming\\Class Data\\ConsoleApp8\\ConsoleApp8.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\Class Data\\ConsoleApp8\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KGA_17\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

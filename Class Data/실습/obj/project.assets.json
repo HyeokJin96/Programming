@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp3\\ConsoleApp3.csproj",
+      "projectUniqueName": "D:\\Programming\\Class Data\\실습\\ConsoleApp3.csproj",
       "projectName": "ConsoleApp3",
-      "projectPath": "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp3\\ConsoleApp3.csproj",
+      "projectPath": "D:\\Programming\\Class Data\\실습\\ConsoleApp3.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\새 폴더\\ConsoleApp3\\obj\\",
+      "outputPath": "D:\\Programming\\Class Data\\실습\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
