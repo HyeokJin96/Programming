@@ -2,35 +2,44 @@
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
+using System.Linq;
 
 namespace Project._Slay_the_Spire
 {
     public class Program
     {
-        string NAME;    //  클래스 이름
-        int max_HP;     //  max_Health Point, 최대체력
-        int HP;         //  Health Point, 체력
-        int STR;        //  Strangth, 힘
-        int DEX;        //  Dexterity, 민첩
-        int WIS;        //  Wisdom, 지혜  
-        int LUCK;       //  행운
-        int GOLD;       //  골드
-        int AP;         //  Attack Power, 공격력
-        int DP;         //  Defence Power, 방어력
+        string NAME;        //  클래스 이름
+        int max_HP;         //  max_Health Point, 최대체력
+        int HP;             //  Health Point, 체력
+        int STR;            //  Strangth, 힘
+        int DEX;            //  Dexterity, 민첩
+        int WIS;            //  Wisdom, 지혜
+        int LUCK;           //  행운
+        int GOLD;           //  골드
+        int OP;             //  Offence Power, 공격력
+        int DP;             //  Defence Power, 방어력
+        int AP;             //  Action Point, 행동력
+        string monsterNAME;
+        int monstermax_HP;
+        int monsterHP;
+        int monsterSTR;
+        int monsterDEX;
+        int monsterAP;
+        int monsterDP;
+
         bool isGameOver = false;
         int userInput;
 
         Random random = new Random();
 
-
-
         static void Main(string[] args)
         {
-            Console.SetWindowSize(200, 50);     //  콘솔 화면 크기 지정하기
+            Console.SetWindowSize(200, 50);     //  콘솔 화면 크기 지정
 
             Program program = new Program();
             program.MainMenu();
             program.MainMenuSelection();
+
 
 
 
@@ -327,11 +336,10 @@ namespace Project._Slay_the_Spire
                 Thread.Sleep(80);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;   //  출력 색갈 설정
+            Console.ResetColor();   //  출력 색갈 초기화
 
             Console.ReadLine();
-            MyInformation();
-            ActionChoice();
+            MainUi();
         }   //  StartScreen
 
         public void MyInformation()
@@ -358,13 +366,13 @@ namespace Project._Slay_the_Spire
             Console.WriteLine("\t@@@@@@@@@@@@@@@@@@;~- ..,,.@@@@@@@@@@@@@                                                                                          ");
             Console.WriteLine("\t@@@@@@@@@@@@@@@@@-!:..,,~,.@@@@@@@@@@@@@                                                                                          ");
             Console.WriteLine("\t@@@@@@@@@@@@@@@  .;*: ,-:~.@@@@@@@@@@@@@                                                                                          ");
-            Console.WriteLine("\t@@@@@@@@@@@@@ ..  .:!!.-~-@@@@@@@@@@@@@@                                                                                          ");
+            Console.WriteLine("\t@@@@@@@@@@@@@ ..  .:!!.-~-@@@@@@@@@@@@@@                                               행동을 선택하세요                            ");
             Console.WriteLine("\t@@@@@@@@@@@.    .  .;;*;;,@@@@@@@@@@@@@@                                                                                          ");
-            Console.WriteLine("\t@@@@@@@@@@@.  ....  ,:;:.,-@@@@@@@@@@@@@                                                                                          ");
+            Console.WriteLine("\t@@@@@@@@@@@.  ....  ,:;:.,-@@@@@@@@@@@@@                                         {1}\t탑을 올라간다.                                ");
             Console.WriteLine("\t@@@@@@@@@@.,:~ ...    -.,.~@@@@@@@@@@@@@                                                                                          ");
-            Console.WriteLine("\t@@@@@@@@@@:--~;;.    . ,,-~@@@@@@@@@@@@@                                                                                          ");
+            Console.WriteLine("\t@@@@@@@@@@:--~;;.    . ,,-~@@@@@@@@@@@@@                                         {2}\t수상한 방에 들어간다.                         ");
             Console.WriteLine("\t@@@@@@@@@. .~:**:,  ...,,!;@@@@@@@@@@@@@                                                                                          ");
-            Console.WriteLine("\t@@@@@@@@@  ,:@;*. ,....,,:*:@@@@@@@@@@@@                                                                                          ");
+            Console.WriteLine("\t@@@@@@@@@  ,:@;*. ,....,,:*:@@@@@@@@@@@@                                         {3}\t휴식을 취한다.                                ");
             Console.WriteLine("\t@@@@@@@@~ .-@@~! ,-,...,::~:@@@@@@@@@@@@                                                                                          ");
             Console.WriteLine("\t@@@@@@@@  ,@@@@. ,,-~..-;--. @@@@@@@@@@@                                                                                          ");
             Console.WriteLine("\t@@@@@@@  ,@@.~.  ,,---.!: ., .@@@@@@@@@@                                                                                          ");
@@ -386,10 +394,42 @@ namespace Project._Slay_the_Spire
             Console.WriteLine("\t@@@@@@=:$@=@@@@@@@@@@@@@@@@@@@@@#::#!@@@                                                                                          ");
             Console.WriteLine("\t@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                                                          ");
 
-            Console.ReadLine();
+            int.TryParse(Console.ReadLine(), out userInput);
 
-            Event();
-        }
+            switch (userInput)
+            {
+                case 1:
+                    Event_NormalMonster();
+                    break;
+                case 2:
+                    Event();
+                    break;
+                case 3:
+                    if (HP <= max_HP - 10)
+                    {
+                        HP += 10;
+                    }
+                    else if (HP >= max_HP - 10)
+                    {
+                        HP = max_HP;
+                    }
+                    else
+                    {
+                        HP += 0;
+                    }
+                    break;
+                    MainUi();
+                default:
+                    ErrorMessage();
+                    break;
+            }
+        }   //  ActionChoice
+
+        public void MainUi()
+        {
+            MyInformation();
+            ActionChoice();
+        }   //  MainUi
 
         public void Event()
         {
@@ -398,7 +438,6 @@ namespace Project._Slay_the_Spire
             switch (randomEvent)
             {
                 case 1:
-                    Event_NormalMonster();
                     break;
                 case 2:
                     break;
@@ -420,15 +459,14 @@ namespace Project._Slay_the_Spire
             switch (randomNormalMonster)
             {
                 case 1:
-                    NAME = "광신자(Cultist)";
-                    max_HP= 40;
-                    HP = max_HP;
-                    AP = 6;
-                    DP = 5;
-                    STR = 0;
-                    DEX = 0;
+                    monsterNAME = "광신자(Cultist)";
+                    monstermax_HP = 40;
+                    monsterHP = max_HP;
+                    monsterSTR = 0;
+                    monsterDEX = 0;
+                    monsterAP = 5;
+                    monsterDP = 5;
                     BattleScreen();
-                    NormalMonster_Cultist();
                     break;
                 case 2:
                     break;
@@ -463,6 +501,54 @@ namespace Project._Slay_the_Spire
 
         }
 
+        public void MonsterInformation()
+        {
+            Console.WriteLine("\n\n\n\n\n\n\n\n");
+            Console.WriteLine($"{monsterNAME} ♥ : {monstermax_HP} / {monsterHP} {monsterSTR} {monsterAP} {monsterDP}");
+        }
+
+        public void Battle()
+        {
+
+        }
+
+        public void BattleScreen()
+        {
+            Console.Clear();
+
+            MyInformation();
+            MonsterInformation();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public void Event_MysteryMerchant() //  이벤트_수수께끼 상인
         {
 
@@ -473,56 +559,6 @@ namespace Project._Slay_the_Spire
 
         }
 
-        public void BattleScreen()
-        {
-            Console.Clear();
-
-            MyInformation();
-        }
-
-
-
-        public void NormalMonster_Cultist()
-        {
-            Console.WriteLine("\t$==#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-            Console.WriteLine("\t=***=#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-            Console.WriteLine("\t##@#*$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-            Console.WriteLine("\t@@@@**#@@@@@@@@@@@@@@@@@@@@@@@@@@@**=@@@");
-            Console.WriteLine("\t*@@@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@##;=@@");
-            Console.WriteLine("\t=$@@$*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:#@");
-            Console.WriteLine("\t@=#@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!!#");
-            Console.WriteLine("\t@==#;*#@@@@@=#@@@@@@@@@@@@@@@@@@@*@@@**#");
-            Console.WriteLine("\t@@*=!#@@@@@$!!#@@@@@@@@@@@@@@@@@@*#@@;*#");
-            Console.WriteLine("\t@@=*$#@@@=!;!~..*@@@@@@@@@@@@@@@@=#@@;$@");
-            Console.WriteLine("\t@@@*#@@@@*!!.   .#@@@@@@@@@@@@@@==#@;*#@");
-            Console.WriteLine("\t@@@==*@@*!!. .   ;#@@@@@@@@@$$#$!=$;;#@@");
-            Console.WriteLine("\t@@@@!;#**!; .!. .,::#@@@@@@=~:~:::;;*#@@");
-            Console.WriteLine("\t@@@@!:;;!!,......,-*=#@@@;=;~~~~~::!=#@@");
-            Console.WriteLine("\t@@@@*!!::~..;;,~--~;!!;!;:~~~~~~:::!##@@");
-            Console.WriteLine("\t@@@@===!;..~;~~;:;:;;::~~:~~:~~~:::~:##@");
-            Console.WriteLine("\t@@@@**!;!-!;~~:::;;;:~---~~~~~-;:~::::*#");
-            Console.WriteLine("\t@@@@!!!!;!;:!;:::::;:---~~~~~~~;~~~~~~;;");
-            Console.WriteLine("\t@@@@=;;!;!!!#*;::;:;;~~:*:~~~~:;~~~~~::!");
-            Console.WriteLine("\t@@@@*;!!*=####;::;:;;;:;#*;:~:~~:~::::;$");
-            Console.WriteLine("\t@@@@*=#=#$#@@;;;:;;:::;!#@!=;:::::::~::*");
-            Console.WriteLine("\t@@@@@#@##@@@@!;;:;;;:::!#@@#$#***:~::*=#");
-            Console.WriteLine("\t@@@@@@@@@@@@@;;;:::;;::;#@@@@@@#@;!::!$#");
-            Console.WriteLine("\t@@@@@@@@@@@@@*;;:;;;;;;:$@@@@@@@@@#=###@");
-            Console.WriteLine("\t@@@@@@@@@@@@;;;::;;;;;;;=#@@@@@@@@@@@#@@");
-            Console.WriteLine("\t@@@@@@@@@@@@*;;::;;::;:;;#@@@@@@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@@=;:;:::::;::*#@@@@@@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@*;;::;::;:;;:#@@@@@@@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@!:::;;;;;::::;#@@@@@@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@!:;;:;:;::::::;=@@@@@=@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@==;;;:;:;;::;;;!#;!:;;#@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@=;::!;;!*;;;;:;;;;;=##@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@@#=~*!=#*~!*=;;;;*=#@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@@@@~*###=-;###==###@@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@@@@~*#@@@--#@@@#@@@@@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@@@@:*#@@@=~~:#@@@@@@@@@@@@@@@");
-            Console.WriteLine("\t@@@@@@@@@@@@@::*#@@=:~#;;@@@@@@@@@@@@@@@");
-      
-        }
 
 
 
@@ -545,6 +581,282 @@ namespace Project._Slay_the_Spire
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //public void NormalMonster_Cultist()
+        //{
+        //    Console.WriteLine("\t$==#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t=***=#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t##@#*$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@**#@@@@@@@@@@@@@@@@@@@@@@@@@@@**=@@@");
+        //    Console.WriteLine("\t*@@@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@##;=@@");
+        //    Console.WriteLine("\t=$@@$*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:#@");
+        //    Console.WriteLine("\t@=#@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!!#");
+        //    Console.WriteLine("\t@==#;*#@@@@@=#@@@@@@@@@@@@@@@@@@@*@@@**#");
+        //    Console.WriteLine("\t@@*=!#@@@@@$!!#@@@@@@@@@@@@@@@@@@*#@@;*#");
+        //    Console.WriteLine("\t@@=*$#@@@=!;!~..*@@@@@@@@@@@@@@@@=#@@;$@");
+        //    Console.WriteLine("\t@@@*#@@@@*!!.   .#@@@@@@@@@@@@@@==#@;*#@");
+        //    Console.WriteLine("\t@@@==*@@*!!. .   ;#@@@@@@@@@$$#$!=$;;#@@");
+        //    Console.WriteLine("\t@@@@!;#**!; .!. .,::#@@@@@@=~:~:::;;*#@@");
+        //    Console.WriteLine("\t@@@@!:;;!!,......,-*=#@@@;=;~~~~~::!=#@@");
+        //    Console.WriteLine("\t@@@@*!!::~..;;,~--~;!!;!;:~~~~~~:::!##@@");
+        //    Console.WriteLine("\t@@@@===!;..~;~~;:;:;;::~~:~~:~~~:::~:##@");
+        //    Console.WriteLine("\t@@@@**!;!-!;~~:::;;;:~---~~~~~-;:~::::*#");
+        //    Console.WriteLine("\t@@@@!!!!;!;:!;:::::;:---~~~~~~~;~~~~~~;;");
+        //    Console.WriteLine("\t@@@@=;;!;!!!#*;::;:;;~~:*:~~~~:;~~~~~::!");
+        //    Console.WriteLine("\t@@@@*;!!*=####;::;:;;;:;#*;:~:~~:~::::;$");
+        //    Console.WriteLine("\t@@@@*=#=#$#@@;;;:;;:::;!#@!=;:::::::~::*");
+        //    Console.WriteLine("\t@@@@@#@##@@@@!;;:;;;:::!#@@#$#***:~::*=#");
+        //    Console.WriteLine("\t@@@@@@@@@@@@@;;;:::;;::;#@@@@@@#@;!::!$#");
+        //    Console.WriteLine("\t@@@@@@@@@@@@@*;;:;;;;;;:$@@@@@@@@@#=###@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@;;;::;;;;;;;=#@@@@@@@@@@@#@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@*;;::;;::;:;;#@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@=;:;:::::;::*#@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@*;;::;::;:;;:#@@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@!:::;;;;;::::;#@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@!:;;:;:;::::::;=@@@@@=@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@==;;;:;:;;::;;;!#;!:;;#@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@=;::!;;!*;;;;:;;;;;=##@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@#=~*!=#*~!*=;;;;*=#@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@@@~*###=-;###==###@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@@@~*#@@@--#@@@#@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@@@:*#@@@=~~:#@@@@@@@@@@@@@@@");
+        //    Console.WriteLine("\t@@@@@@@@@@@@@::*#@@=:~#;;@@@@@@@@@@@@@@@");
+
+        //}
+
+
+
+
+
+
+
+
+
+
+
+        //public void Cards()
+        //{
+        //    /*
+        //     * 총 30장 생성
+        //     * 기본 공격카드, 기본 방어카드 각 5장씩 총 10장
+        //     * 특수 공격카드, 특수 방어카드 7장씩 총 14장
+        //     * 스킬카드 6장
+        //     */
+
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        card[i] = i;
+        //    }
+
+        //    var deckIndex = card.OrderBy(x => random.Next()).ToArray();
+
+        //    foreach (var n in deckIndex)
+        //    {
+        //        Card newcard = new Card();
+        //        switch (deckIndex[n])
+        //        {
+        //            case 0:
+        //                newcard.SetupOneCard("타격", 5, 0, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 1:
+        //                newcard.SetupOneCard("타격", 5, 0, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 2:
+        //                newcard.SetupOneCard("타격", 5, 0, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 3:
+        //                newcard.SetupOneCard("타격", 5, 0, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 4:
+        //                newcard.SetupOneCard("타격", 5, 0, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 5:
+        //                newcard.SetupOneCard("수비", 0, 5, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 6:
+        //                newcard.SetupOneCard("수비", 0, 5, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 7:
+        //                newcard.SetupOneCard("수비", 0, 5, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 8:
+        //                newcard.SetupOneCard("수비", 0, 5, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            case 9:
+        //                newcard.SetupOneCard("수비", 0, 5, 1);
+        //                my_deck.Add(newcard);
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //    }
+        //}   //  Cards
+
+        //public void Deck()
+        //{
+        //    my_deck = new List<Card>();
+        //    Cards();
+
+        //}
+
+        //public void my_Deck()
+        //{
+        //    Card my_deck = new Card();
+        //}
+
+
+
+
+
+
+
+
+
+        //public void SetupOneCard(string cardNAME_, int cardSTR_, int cardDEX_, int cardAP_)
+        //{
+        //    cardNAME = cardNAME_;
+        //    cardSTR = cardSTR_;
+        //    cardDEX = cardDEX_;
+        //    cardAP = cardAP_;
+
+        //    Console.WriteLine($"내가 뽑은 카드");
+        //    Console.WriteLine($"이름        : {cardNAME}");
+        //    Console.WriteLine($"공격력      : {cardSTR}");
+        //    Console.WriteLine($"방어력      : {cardDEX}");
+        //    Console.WriteLine($"소모 헹동력 : {cardAP}");
+        //    Console.WriteLine("");
+        //}
+
+        //public void MyDeck()
+        //{
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        cards.Add(i);
+
+        //        switch (cards[i])
+        //        {
+        //            case 0:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 1:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 2:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 3:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 4:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 5:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 6:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 7:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 8:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 9:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //    }
+        //}   //  MyDeck
+
+        //public void ShuffleMyDeck()
+        //{
+        //    var shuffleDeck = cards.OrderBy(x => random.Next()).ToArray();
+
+        //    foreach (var n in shuffleDeck)
+        //    {
+        //        switch (shuffleDeck[n])
+        //        {
+        //            case 0:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 1:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 2:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 3:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 4:
+        //                SetupOneCard("타격", 5, 0, 1);
+        //                break;
+        //            case 5:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 6:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 7:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 8:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            case 9:
+        //                SetupOneCard("수호", 0, 5, 1);
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //    }
+        //}
+
+        //public void Test()
+        //{
+        //    MyDeck();
+        //    ShuffleMyDeck();
+        //}
 
 
 
