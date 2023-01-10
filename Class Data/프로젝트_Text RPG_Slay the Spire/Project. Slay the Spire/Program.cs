@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Linq;
 using System.Xml.Linq;
+using System.Drawing;
 
 namespace Project._Slay_the_Spire
 {
@@ -35,6 +36,10 @@ namespace Project._Slay_the_Spire
         int basicATK = 5;       //  기본 공격력
         int basicDEF = 5;       //  기본 방어력
 
+        int number1 = 1;
+        int number2 = 2;
+        int number3 = 3;
+
         int Floor = 1;
 
         int userInput;
@@ -42,6 +47,8 @@ namespace Project._Slay_the_Spire
 
         public static Program Game = new Program();
         public static Character playerCharacter = new Character();
+
+        List<int> list = new List<int>();
 
         Random random = new Random();
 
@@ -310,10 +317,6 @@ namespace Project._Slay_the_Spire
             monsterWIS = WIS_;
             monsterLUCK = LUCK_;
 
-            if (monsterHP > monsterMAXHP)   // 제한 : 최대체력
-            {
-                monsterHP = monsterMAXHP;
-            }
         }   //  SetupMonsterCharacter
 
         public void ATKCalculation()    //  공격력 계산
@@ -483,28 +486,128 @@ namespace Project._Slay_the_Spire
 
         public void ActionChoice()
         {
+            Console.Clear();
+
             MainUi();
 
-            Console.WriteLine("행동을 선택하세요");
+            Console.SetCursorPosition(120, 20);     //  출력 위치 설정
+            Console.Write("행동을 선택하세요 : ");
 
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+
+            foreach (var n in list)
+            {
+                switch (n)
+                {
+                    case 1:
+                        Console.SetCursorPosition(110, 25);     //  출력 위치 설정
+                        Console.WriteLine($"[{number1}] 탑을 올라갑니다.");
+                        break;
+                    case 2:
+                        Console.SetCursorPosition(110, 30);     //  출력 위치 설정
+                        Console.WriteLine($"[{number2}] 수상한 방에 들어갑니다.");
+                        break;
+                    case 3:
+                        Console.SetCursorPosition(110, 35);     //  출력 위치 설정
+                        Console.WriteLine($"[{number3}] 휴식을 취합니다.");
+                        break;
+                }
+            }
+
+            Console.SetCursorPosition(150, 20);     //  출력 위치 설정
             int.TryParse(Console.ReadLine(), out userInput);
 
-            switch (userInput)
+            if (userInput == 1)
             {
-                case 1:
-                    Console.WriteLine("탑을 올라갑니다.");
-                    break;
-                case 2:
-                    Console.WriteLine("수상한 방에 들어갑니다.");
-                    break;
-                case 3:
-                    Console.WriteLine("휴식을 취합니다.");
-
-                    break;
-                default:
-                    break;
+                BattleScreen();
             }
+            else if (userInput == 2)
+            {
+
+                list.Remove(2);     //  2번 선택시 선택지 제거
+                number3 = 2;
+            }
+            else if (userInput == 3)
+            {
+                Rest();
+                list.Remove(3);     //  3번 선택시 선택지 제거
+            }
+            else
+            {
+                ErrorMessage();     //  [ERROR]
+                ActionChoice();
+            }
+
+            Console.Clear();
+
+            MainUi();
+
+            Console.SetCursorPosition(120, 20);     //  출력 위치 설정
+            Console.Write("행동을 선택하세요 : ");
+
+            foreach (var n in list)
+            {
+                switch (n)
+                {
+                    case 1:
+                        Console.SetCursorPosition(110, 25);     //  출력 위치 설정
+
+                        Console.WriteLine($"[{number1}] 탑을 올라갑니다.");
+                        break;
+                    case 2:
+                        Console.SetCursorPosition(110, 30);     //  출력 위치 설정
+
+                        Console.WriteLine($"[{number2}] 수상한 방에 들어갑니다.");
+                        break;
+                    case 3:
+                        Console.SetCursorPosition(110, 35);     //  출력 위치 설정
+
+                        Console.WriteLine($"[{number3}] 휴식을 취합니다.");
+                        break;
+                }
+            }
+
+            Console.SetCursorPosition(150, 20);     //  출력 위치 설정
+            int.TryParse(Console.ReadLine(), out userInput);
+
         }   //  ActionChoice
+
+        public void Rest()
+        {
+            Console.Clear();
+
+            int percent = random.Next(1, 4);
+
+            if (percent == 1)
+            {
+                Console.WriteLine("휴식을 취하던 도중 적의 습격을 받았습니다. {HP - 10}");    //  33%의 확률로 체력을 회복하는 대신 잃음
+                playerHP = playerHP - 10;
+            }
+            else
+            {
+                Console.WriteLine("상쾌함을 느낍니다. {HP + 10}");
+
+                if (playerHP + 10 >= playerMAXHP)   //  제한 : 체력은 최대체력보다 높을수 없음
+                {
+                    playerHP = playerMAXHP;
+                }
+                else
+                {
+                    playerHP += 10;
+                }
+            }
+            Console.ReadLine();
+
+
+        }
+
+
+
+
+
+
 
         public void Event()     //  Event
         {
@@ -562,13 +665,86 @@ namespace Project._Slay_the_Spire
 
 
 
+        public void BattleScreen()
+        {
+            Console.Clear();
+
+            BattleUi_Cultist();
+
+            Console.SetCursorPosition(90, 20);
+            Console.WriteLine("행동을 선택하세요");
+
+            Console.SetCursorPosition(90, 23);
+            Console.WriteLine("가나다라마바사");
+
+            Console.SetCursorPosition(90, 26);
+            Console.WriteLine("가나다라마바사");
+
+            Console.SetCursorPosition(90, 29);
+            Console.WriteLine("가나다라마바사");
+
+            Console.ReadLine();
+
+        }
+
+        public void BattleAction()
+        {
+
+        }
 
 
 
 
-
-
-
+        public void BattleUi_Cultist()
+        {
+            Console.WriteLine("=======================================================================================================================================================================================================");
+            Console.WriteLine($"     직업 : {playerNAME}          ♥ : {playerMAXHP} / {playerHP}                         STR : {playerSTR}  DEX : {playerDEX}  INT : {playerINT}  WIS : {playerWIS}  LUCK : {playerLUCK}                                          GOLD : {playerGOLD}");
+            Console.WriteLine("=======================================================================================================================================================================================================");
+            Console.WriteLine("                                                                                       보유 아이템                                                                                                      ");
+            Console.WriteLine("①\n                                                                                                                                                                                                   ");
+            Console.WriteLine("②\n                                                                                                                                                                                                   ");
+            Console.WriteLine("③\n                                                                                                                                                                                                   ");
+            Console.WriteLine("④\n                                                                                                                                                                                                   ");
+            Console.WriteLine("⑤\n                                                                                                                                                                                                   ");
+            Console.WriteLine("=======================================================================================================================================================================================================");
+            Console.WriteLine("");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"\t■■■■■■■■■■■■■■■  ♥ {playerMAXHP} / {playerHP}                                                                                                      ■■■■■■■■■■■■■■■  ♥ {monsterMAXHP} / {monsterHP}\n");
+            Console.WriteLine($"                                                                                                                                                                 {monsterNAME}");
+            Console.ResetColor();
+            Console.WriteLine("\t@@@@@@@@@@@@@@@@@@ -;~,.,@~@@@@@@@@@@@@@                                                                                                      ##@#*$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@@@@@@@@@@@@@-. . ,,, @@@@@@@@@@@@@                                                                                                      @@@@**#@@@@@@@@@@@@@@@@@@@@@@@@@@@**=@@@          ");
+            Console.WriteLine("\t@@@@@@@@@@@@@@@@@@~.  .-~. @@@@@@@@@@@@@                                                                                                      *@@@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@##;=@@          ");
+            Console.WriteLine("\t@@@@@@@@@@@@@@@@@@;~- ..,,.@@@@@@@@@@@@@                                                                                                      =$@@$*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:#@          ");
+            Console.WriteLine("\t@@@@@@@@@@@@@@@@@-!:..,,~,.@@@@@@@@@@@@@                                                                                                      @=#@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!!#          ");
+            Console.WriteLine("\t@@@@@@@@@@@@@@@  .;*: ,-:~.@@@@@@@@@@@@@                                                                                                      @==#;*#@@@@@=#@@@@@@@@@@@@@@@@@@@*@@@**#          ");
+            Console.WriteLine("\t@@@@@@@@@@@@@ ..  .:!!.-~-@@@@@@@@@@@@@@                                                                                                      @@*=!#@@@@@$!!#@@@@@@@@@@@@@@@@@@*#@@;*#          ");
+            Console.WriteLine("\t@@@@@@@@@@@.    .  .;;*;;,@@@@@@@@@@@@@@                                                                                                      @@=*$#@@@=!;!~..*@@@@@@@@@@@@@@@@=#@@;$@          ");
+            Console.WriteLine("\t@@@@@@@@@@@.  ....  ,:;:.,-@@@@@@@@@@@@@                                                                                                      @@@*#@@@@*!!.   .#@@@@@@@@@@@@@@==#@;*#@          ");
+            Console.WriteLine("\t@@@@@@@@@@.,:~ ...    -.,.~@@@@@@@@@@@@@                                                                                                      @@@==*@@*!!. .   ;#@@@@@@@@@$$#$!=$;;#@@          ");
+            Console.WriteLine("\t@@@@@@@@@@:--~;;.    . ,,-~@@@@@@@@@@@@@                                                                                                      @@@@!;#**!; .!. .,::#@@@@@@=~:~:::;;*#@@          ");
+            Console.WriteLine("\t@@@@@@@@@. .~:**:,  ...,,!;@@@@@@@@@@@@@                                                                                                      @@@@!:;;!!,......,-*=#@@@;=;~~~~~::!=#@@          ");
+            Console.WriteLine("\t@@@@@@@@@  ,:@;*. ,....,,:*:@@@@@@@@@@@@                                                                                                      @@@@*!!::~..;;,~--~;!!;!;:~~~~~~:::!##@@          ");
+            Console.WriteLine("\t@@@@@@@@~ .-@@~! ,-,...,::~:@@@@@@@@@@@@                                                                                                      @@@@===!;..~;~~;:;:;;::~~:~~:~~~:::~:##@          ");
+            Console.WriteLine("\t@@@@@@@@  ,@@@@. ,,-~..-;--. @@@@@@@@@@@                                                                                                      @@@@**!;!-!;~~:::;;;:~---~~~~~-;:~::::*#          ");
+            Console.WriteLine("\t@@@@@@@  ,@@.~.  ,,---.!: ., .@@@@@@@@@@                                                                                                      @@@@!!!!;!;:!;:::::;:---~~~~~~~;~~~~~~;;          ");
+            Console.WriteLine("\t@@@@@@  .-, .  .., -~-,..~ ,,  @@@@@@@@@                                                                                                      @@@@=;;!;!!!#*;::;:;;~~:*:~~~~:;~~~~~::!          ");
+            Console.WriteLine("\t@@@@@@ .~,,   ...@@.. .. ,-@..  @@@@@@@@                                                                                                      @@@@*;!!*=####;::;:;;;:;#*;:~:~~:~::::;$          ");
+            Console.WriteLine("\t@@@@@@ ,,,   ..--@@@@@,...,-@@, .@@@@@@@                                                                                                      @@@@*=#=#$#@@;;;:;;:::;!#@!=;:::::::~::*          ");
+            Console.WriteLine("\t@@@@@@@@@... .,.@@@@@@-,...,.@@... @@@@@                                                                                                      @@@@@#@##@@@@!;;:;;;:::!#@@#$#***:~::*=#          ");
+            Console.WriteLine("\t@@@@@@@@@    .,.@@@@@@.,..... @ ,.,@@@@@                                                                                                      @@@@@@@@@@@@@;;;:::;;::;#@@@@@@#@;!::!$#          ");
+            Console.WriteLine("\t@@@@@@@ .   .,@@@@@@@@::-,.... .:~@@@@@@                                                                                                      @@@@@@@@@@@@@*;;:;;;;;;:$@@@@@@@@@#=###@          ");
+            Console.WriteLine("\t@@@@@@@.   ,:@@@@@@@@@@@@@~~,..-..@@@@@@                                                                                                      @@@@@@@@@@@@;;;::;;;;;;;=#@@@@@@@@@@@#@@          ");
+            Console.WriteLine("\t@@@@@@@- .~~@@@@@@@@@@@@@@@@ ...~@@@@@@@                                                                                                      @@@@@@@@@@@@*;;::;;::;:;;#@@@@@@@@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@@~. -@@@@@@@@@@@@@@@@@ ...-@@@@@@@                                                                                                      @@@@@@@@@@@@=;:;:::::;::*#@@@@@@@@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@@~. @@@@@@@@@@@@@@@@@@@-...@@@@@@@                                                                                                      @@@@@@@@@@@*;;::;::;:;;:#@@@@@@@@@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@@~.-;@@@@@@@@@@@@@@@@@@@~-. @@@@@@                                                                                                      @@@@@@@@@@@!:::;;;;;::::;#@@@@@@@@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@@@.~@@@@@@@@@@@@@@@@@@@@@~,~@@@@@@                                                                                                      @@@@@@@@@@!:;;:;:;::::::;=@@@@@=@@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@@@ ~@@@@@@@@@@@@@@@@@@@@@@~-@@@@@@                                                                                                      @@@@@@@@@@==;;;:;:;;::;;;!#;!:;;#@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@@.,,@@@@@@@@@@@@@@@@@@@@@@.,,@@@@@                                                                                                      @@@@@@@@@@@=;::!;;!*;;;;:;;;;;=##@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@..,.:@@@@@@@@@@@@@@@@@@@@@$,.. @@@                                                                                                      @@@@@@@@@@@@#=~*!=#*~!*=;;;;*=#@@@@@@@@@          ");
+            Console.WriteLine("\t@@@@@@=:$@=@@@@@@@@@@@@@@@@@@@@@#::#!@@@                                                                                                      @@@@@@@@@@@@@@~*###=-;###==###@@@@@@@@@@          ");
+        }
 
 
 
@@ -811,47 +987,46 @@ namespace Project._Slay_the_Spire
 
 
 
-        //public void NormalMonster_Cultist()
-        //{
-        //    Console.WriteLine("\t$==#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t=***=#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t##@#*$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@**#@@@@@@@@@@@@@@@@@@@@@@@@@@@**=@@@");
-        //    Console.WriteLine("\t*@@@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@##;=@@");
-        //    Console.WriteLine("\t=$@@$*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:#@");
-        //    Console.WriteLine("\t@=#@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!!#");
-        //    Console.WriteLine("\t@==#;*#@@@@@=#@@@@@@@@@@@@@@@@@@@*@@@**#");
-        //    Console.WriteLine("\t@@*=!#@@@@@$!!#@@@@@@@@@@@@@@@@@@*#@@;*#");
-        //    Console.WriteLine("\t@@=*$#@@@=!;!~..*@@@@@@@@@@@@@@@@=#@@;$@");
-        //    Console.WriteLine("\t@@@*#@@@@*!!.   .#@@@@@@@@@@@@@@==#@;*#@");
-        //    Console.WriteLine("\t@@@==*@@*!!. .   ;#@@@@@@@@@$$#$!=$;;#@@");
-        //    Console.WriteLine("\t@@@@!;#**!; .!. .,::#@@@@@@=~:~:::;;*#@@");
-        //    Console.WriteLine("\t@@@@!:;;!!,......,-*=#@@@;=;~~~~~::!=#@@");
-        //    Console.WriteLine("\t@@@@*!!::~..;;,~--~;!!;!;:~~~~~~:::!##@@");
-        //    Console.WriteLine("\t@@@@===!;..~;~~;:;:;;::~~:~~:~~~:::~:##@");
-        //    Console.WriteLine("\t@@@@**!;!-!;~~:::;;;:~---~~~~~-;:~::::*#");
-        //    Console.WriteLine("\t@@@@!!!!;!;:!;:::::;:---~~~~~~~;~~~~~~;;");
-        //    Console.WriteLine("\t@@@@=;;!;!!!#*;::;:;;~~:*:~~~~:;~~~~~::!");
-        //    Console.WriteLine("\t@@@@*;!!*=####;::;:;;;:;#*;:~:~~:~::::;$");
-        //    Console.WriteLine("\t@@@@*=#=#$#@@;;;:;;:::;!#@!=;:::::::~::*");
-        //    Console.WriteLine("\t@@@@@#@##@@@@!;;:;;;:::!#@@#$#***:~::*=#");
-        //    Console.WriteLine("\t@@@@@@@@@@@@@;;;:::;;::;#@@@@@@#@;!::!$#");
-        //    Console.WriteLine("\t@@@@@@@@@@@@@*;;:;;;;;;:$@@@@@@@@@#=###@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@;;;::;;;;;;;=#@@@@@@@@@@@#@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@*;;::;;::;:;;#@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@=;:;:::::;::*#@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@*;;::;::;:;;:#@@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@!:::;;;;;::::;#@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@!:;;:;:;::::::;=@@@@@=@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@==;;;:;:;;::;;;!#;!:;;#@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@=;::!;;!*;;;;:;;;;;=##@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@#=~*!=#*~!*=;;;;*=#@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@@@~*###=-;###==###@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@@@~*#@@@--#@@@#@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@@@:*#@@@=~~:#@@@@@@@@@@@@@@@");
-        //    Console.WriteLine("\t@@@@@@@@@@@@@::*#@@=:~#;;@@@@@@@@@@@@@@@");
+        public void NormalMonster_Cultist()
+        {
+            Console.WriteLine("                                                                                                            \t=***=#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t##@#*$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@**#@@@@@@@@@@@@@@@@@@@@@@@@@@@**=@@@");
+            Console.WriteLine("                                                                                                            \t*@@@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@##;=@@");
+            Console.WriteLine("                                                                                                            \t=$@@$*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:#@");
+            Console.WriteLine("                                                                                                            \t@=#@=*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!!#");
+            Console.WriteLine("                                                                                                            \t@==#;*#@@@@@=#@@@@@@@@@@@@@@@@@@@*@@@**#");
+            Console.WriteLine("                                                                                                            \t@@*=!#@@@@@$!!#@@@@@@@@@@@@@@@@@@*#@@;*#");
+            Console.WriteLine("                                                                                                            \t@@=*$#@@@=!;!~..*@@@@@@@@@@@@@@@@=#@@;$@");
+            Console.WriteLine("                                                                                                            \t@@@*#@@@@*!!.   .#@@@@@@@@@@@@@@==#@;*#@");
+            Console.WriteLine("                                                                                                            \t@@@==*@@*!!. .   ;#@@@@@@@@@$$#$!=$;;#@@");
+            Console.WriteLine("                                                                                                            \t@@@@!;#**!; .!. .,::#@@@@@@=~:~:::;;*#@@");
+            Console.WriteLine("                                                                                                            \t@@@@!:;;!!,......,-*=#@@@;=;~~~~~::!=#@@");
+            Console.WriteLine("                                                                                                            \t@@@@*!!::~..;;,~--~;!!;!;:~~~~~~:::!##@@");
+            Console.WriteLine("                                                                                                            \t@@@@===!;..~;~~;:;:;;::~~:~~:~~~:::~:##@");
+            Console.WriteLine("                                                                                                            \t@@@@**!;!-!;~~:::;;;:~---~~~~~-;:~::::*#");
+            Console.WriteLine("                                                                                                            \t@@@@!!!!;!;:!;:::::;:---~~~~~~~;~~~~~~;;");
+            Console.WriteLine("                                                                                                            \t@@@@=;;!;!!!#*;::;:;;~~:*:~~~~:;~~~~~::!");
+            Console.WriteLine("                                                                                                            \t@@@@*;!!*=####;::;:;;;:;#*;:~:~~:~::::;$");
+            Console.WriteLine("                                                                                                            \t@@@@*=#=#$#@@;;;:;;:::;!#@!=;:::::::~::*");
+            Console.WriteLine("                                                                                                            \t@@@@@#@##@@@@!;;:;;;:::!#@@#$#***:~::*=#");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@@;;;:::;;::;#@@@@@@#@;!::!$#");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@@*;;:;;;;;;:$@@@@@@@@@#=###@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@;;;::;;;;;;;=#@@@@@@@@@@@#@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@*;;::;;::;:;;#@@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@=;:;:::::;::*#@@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@*;;::;::;:;;:#@@@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@!:::;;;;;::::;#@@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@!:;;:;:;::::::;=@@@@@=@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@==;;;:;:;;::;;;!#;!:;;#@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@=;::!;;!*;;;;:;;;;;=##@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@#=~*!=#*~!*=;;;;*=#@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@@@~*###=-;###==###@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@@@~*#@@@--#@@@#@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@@@:*#@@@=~~:#@@@@@@@@@@@@@@@");
+            Console.WriteLine("                                                                                                            \t@@@@@@@@@@@@@::*#@@=:~#;;@@@@@@@@@@@@@@@");
 
-        //}
+        }
 
 
 

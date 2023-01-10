@@ -1,0 +1,15 @@
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\bin\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.exe
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\bin\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.deps.json
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\bin\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.runtimeconfig.json
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\bin\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.dll
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\bin\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.pdb
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.csproj.AssemblyReference.cache
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.AssemblyInfoInputs.cache
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.AssemblyInfo.cs
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.csproj.CoreCompileInputs.cache
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.dll
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\refint\CHAPTER02. Tic-Tac-Toe 게임.dll
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.pdb
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\CHAPTER02. Tic-Tac-Toe 게임.genruntimeconfig.cache
+D:\Programming\CHAPTER02. Tic-Tac-Toe 게임\obj\Debug\net6.0\ref\CHAPTER02. Tic-Tac-Toe 게임.dll
