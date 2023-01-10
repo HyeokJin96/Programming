@@ -1,0 +1,15 @@
+C:\Users\KGA_17\Documents\Programming\TEST\bin\Debug\net6.0\TEST.exe
+C:\Users\KGA_17\Documents\Programming\TEST\bin\Debug\net6.0\TEST.deps.json
+C:\Users\KGA_17\Documents\Programming\TEST\bin\Debug\net6.0\TEST.runtimeconfig.json
+C:\Users\KGA_17\Documents\Programming\TEST\bin\Debug\net6.0\TEST.dll
+C:\Users\KGA_17\Documents\Programming\TEST\bin\Debug\net6.0\TEST.pdb
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.csproj.AssemblyReference.cache
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.AssemblyInfoInputs.cache
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.AssemblyInfo.cs
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.csproj.CoreCompileInputs.cache
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.dll
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\refint\TEST.dll
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.pdb
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\TEST.genruntimeconfig.cache
+C:\Users\KGA_17\Documents\Programming\TEST\obj\Debug\net6.0\ref\TEST.dll
