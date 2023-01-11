@@ -11,7 +11,7 @@ namespace Project._Slay_the_Spire
     public class Program
     {
         string playerNAME;  //  플레이어 캐릭터 클래스(직업) 이름
-        int playerHP;       //  Heath Point, 츨레이어 현재 체력
+        int playerHP = 1;       //  Heath Point, 츨레이어 현재 체력
         int playerMAXHP;    //  Max Health Point, 플레이어 최대체력
         int playerSTR;      //  
         int playerDEX;
@@ -28,8 +28,6 @@ namespace Project._Slay_the_Spire
         int monsterSTR;         //  몬스터 힘 스탯
         int monsterDEX;         //  몬스터 민첩 스탯
         int monsterINT;         //  몬스터 지능 스탯
-        int monsterWIS;
-        int monsterLUCK;
         int monsterATK;
         int monsterDEF;
 
@@ -46,7 +44,6 @@ namespace Project._Slay_the_Spire
         bool isGameOver = false;
 
         public static Program Game = new Program();
-        public static Character playerCharacter = new Character();
 
         List<int> list = new List<int>();
 
@@ -58,10 +55,6 @@ namespace Project._Slay_the_Spire
             Console.SetWindowSize(200, 50);     //  콘솔 화면 크기 지정
 
             Game.MainMenu();
-
-
-
-
 
 
 
@@ -106,6 +99,7 @@ namespace Project._Slay_the_Spire
 
 
         }   //  Main ()
+
 
         public void MainMenu()  //   메인화면
         {
@@ -288,6 +282,32 @@ namespace Project._Slay_the_Spire
             Console.WriteLine("\t                                                                ppppppppp                                                                                            ggg::::::ggg");
         }   //  GameOver
 
+        public void Die()
+        {
+            Console.Clear();
+
+            Console.WriteLine("DIE  GMAEOVER");
+            Console.ReadLine();
+            MainMenu();
+        }
+
+        public void Win()
+        {
+            Console.Clear();
+
+            Console.WriteLine("WIN");
+            Console.WriteLine("다음 층으로 이동합니다.");
+            Console.ReadLine();
+        }
+
+        public void Clear()
+        {
+            Console.Clear();
+
+            Console.WriteLine("끝");
+            MainMenu();
+        }
+
         public void SetupPlayerCharacter(string NAME_, int HP_, int MAXHP_, int STR_, int DEX_, int INT_, int WIS_, int LUCK_, int GOLD_)   //  플레이어 캐릭터 설정
         {
             playerNAME = NAME_;
@@ -300,35 +320,22 @@ namespace Project._Slay_the_Spire
             playerLUCK = LUCK_;
             playerGOLD = GOLD_;
 
-            if (playerHP > playerMAXHP)     //  제한 : 최대체력
-            {
-                playerHP = playerMAXHP;
-            }
+            playerATK = basicATK + playerSTR + playerINT;
+            playerDEF = basicDEF + playerDEX;
+
         }   //  SetupPlayerCharacter
 
-        public void SetupMonsterCharacter(string NAME_, int HP_, int MAXHP_, int STR_, int DEX_, int INT_, int WIS_, int LUCK_)     //  몬스터 설정
+        public void SetupMonsterCharacter(string NAME_, int HP_, int MAXHP_, int STR_, int DEX_)     //  몬스터 설정
         {
             monsterNAME = NAME_;
             monsterHP = HP_;
             monsterMAXHP = MAXHP_;
             monsterSTR = STR_;
-            monsterDEX = DEX_;
-            monsterINT = INT_;
-            monsterWIS = WIS_;
-            monsterLUCK = LUCK_;
+
+            monsterATK = basicATK + monsterATK;
+            monsterDEF = basicDEF + monsterDEX;
 
         }   //  SetupMonsterCharacter
-
-        public void ATKCalculation()    //  공격력 계산
-        {
-            playerATK = basicATK + playerSTR + playerINT;
-            monsterATK = basicATK + monsterATK;
-        }   //  ATKCalculation
-
-        public void DEFCalculation()    //  방어력 계산
-        {
-
-        }   //  DEFCalculation
 
         public void CharacterSelection()    //  캐릭터 선택
         {
@@ -445,8 +452,6 @@ namespace Project._Slay_the_Spire
             Console.WriteLine("①\n                                                                                                                                                                                                   ");
             Console.WriteLine("②\n                                                                                                                                                                                                   ");
             Console.WriteLine("③\n                                                                                                                                                                                                   ");
-            Console.WriteLine("④\n                                                                                                                                                                                                   ");
-            Console.WriteLine("⑤\n                                                                                                                                                                                                   ");
             Console.WriteLine("=======================================================================================================================================================================================================");
             Console.WriteLine("");
             Console.WriteLine("\t@@@@@@@@@@@@@@@@@@ -;~,.,@~@@@@@@@@@@@@@                                                                                                                           ");
@@ -486,10 +491,35 @@ namespace Project._Slay_the_Spire
 
         public void ActionChoice()
         {
+
             Console.Clear();
+
+            if (Floor == 10)
+            {
+                Console.Clear();
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                string text = "BOSS";
+
+                for (int n = 0; n < 100; n++)
+                {
+                    for (int i = 0; i < text.Length; i++)
+                    {
+                        Console.SetCursorPosition(random.Next(5, 195), random.Next(5, 45));
+                        Console.Write(text);
+                        Thread.Sleep(1);
+                    }
+                }
+                Console.ResetColor();
+                Console.ReadLine();
+
+                BoossMonster();
+            }
 
             MainUi();
 
+            Console.SetCursorPosition(120, 15);     //  출력 위치 설정
+            Console.WriteLine("{0} F",Floor);
             Console.SetCursorPosition(120, 20);     //  출력 위치 설정
             Console.Write("행동을 선택하세요 : ");
 
@@ -521,18 +551,17 @@ namespace Project._Slay_the_Spire
 
             if (userInput == 1)
             {
-                BattleScreen();
+                NormalMonster();
             }
             else if (userInput == 2)
             {
-
                 list.Remove(2);     //  2번 선택시 선택지 제거
-                number3 = 2;
+                Event();
             }
             else if (userInput == 3)
             {
-                Rest();
                 list.Remove(3);     //  3번 선택시 선택지 제거
+                Rest();
             }
             else
             {
@@ -540,37 +569,6 @@ namespace Project._Slay_the_Spire
                 ActionChoice();
             }
 
-            Console.Clear();
-
-            MainUi();
-
-            Console.SetCursorPosition(120, 20);     //  출력 위치 설정
-            Console.Write("행동을 선택하세요 : ");
-
-            foreach (var n in list)
-            {
-                switch (n)
-                {
-                    case 1:
-                        Console.SetCursorPosition(110, 25);     //  출력 위치 설정
-
-                        Console.WriteLine($"[{number1}] 탑을 올라갑니다.");
-                        break;
-                    case 2:
-                        Console.SetCursorPosition(110, 30);     //  출력 위치 설정
-
-                        Console.WriteLine($"[{number2}] 수상한 방에 들어갑니다.");
-                        break;
-                    case 3:
-                        Console.SetCursorPosition(110, 35);     //  출력 위치 설정
-
-                        Console.WriteLine($"[{number3}] 휴식을 취합니다.");
-                        break;
-                }
-            }
-
-            Console.SetCursorPosition(150, 20);     //  출력 위치 설정
-            int.TryParse(Console.ReadLine(), out userInput);
 
         }   //  ActionChoice
 
@@ -598,26 +596,184 @@ namespace Project._Slay_the_Spire
                     playerHP += 10;
                 }
             }
+
+            Console.WriteLine("적이 몰려옵니다. 황급히 다음 층으로 도망칩니다.");
             Console.ReadLine();
+            Floor++;
+            ActionChoice();
 
-
-        }
-
-
-
-
-
-
+        }   //  Rest
 
         public void Event()     //  Event
         {
-            //  여기서 이벤트 종류와 확률 등을 설정
+            Console.Clear();
+
+            switch (random.Next(1, 2))     //  랜덤 이벤트
+            {
+                case 1:
+                    Console.WriteLine("깜찍이를 만남 HP +10");
+
+                    if (playerHP + 10 >= playerMAXHP)
+                    {
+                        playerHP = playerMAXHP;
+                    }
+                    else
+                    {
+                        playerHP += 10;
+                    }
+                    break;
+                case 2:
+                    Console.WriteLine("수상한 대장간(Ominous Forge)");        //  1. 물건 사기 / 2. 물건 훔치기
+                    break;
+                case 3:
+                    Console.WriteLine("모닥불 정령들(Bonfire Spirits)");      //  최대체력 증가
+                    break;
+                case 4:
+                    Console.WriteLine("파란 옷의 여자(The Woman in Blue)");       //  포션 강매, 사지 않을 시 아무일도 없거나 최대체력의 5%를 잃음
+                    break;
+                case 5:
+                    Console.WriteLine("변화의 돌림판(Wheel of Change)");      //  랜덤 돌림판
+                    break;
+                case 6:
+                    Console.WriteLine("얼굴 상인(Face Trader)");        //  최대체력의 10%만큼 체력을 잃고 골드를 얻음 or 거래(랜덤 아이템)
+                    break;
+                case 7:
+                    Console.WriteLine("월척(Big Fish)");       //  아이템 획득
+                    break;
+                case 8:
+                    Console.WriteLine("끈적이 천지(World of Goop)");     //  슬라임 전투
+                    break;
+                case 9:
+                    Console.WriteLine("시체(Dead Adventurer)");       //  시체 탐색 -> 전투
+                    break;
+                case 10:
+                    Console.WriteLine("비밀 포탈(Secret Portal)");      //  보스 앞으로 강제이동
+                    break;
+            }
+            Console.WriteLine("적이 몰려옵니다. 황급히 다음층으로 도망칩니다.");
+            Console.ReadLine() ;
+            Floor++;
+            ActionChoice();
+
+            ActionChoice();
         }   //  Event
 
-
+        public void Battleloop()
+        {
+            while (playerHP > 0 || monsterHP > 0)
+            {
+                if (playerHP <= 0)      //  플레이어의 체력이 0이하일 경우 패배
+                {
+                    Die();
+                }
+                else if (monsterHP <= 0)    //  몬스터의 체력이 0이하일 경우 승리
+                {
+                    Win();
+                    Rewarld();
+                    Floor++;
+                    ActionChoice();
+                }
+                else
+                {
+                    BattleUi_Cultist();
+                }
+            }
+            Floor++;
+            ActionChoice();
+        }
         public void NormalMonster()     //  Event : NormalMonster
         {
             switch (random.Next(1, 11))
+            {
+                case 1:
+                    SetupMonsterCharacter("광신자(Cultist)", 40, 40, 1, 1);                 //  NormalMonster, 광신자(Cultist)
+                    Battleloop();
+                    break;
+                case 2:
+                    SetupMonsterCharacter("공벌레(Louse)", 30, 30, 3, 3);                   //  NormalMonster, 공벌레Louse)
+                    Battleloop();
+                    break;
+                case 3:
+                    SetupMonsterCharacter("가시 슬라임(Spike Slime)", 30, 30, 5, 1);        //  NormalMonster, 가시 슬라임(Spike Slime)
+                    Battleloop();
+                    break;
+                case 4:
+                    SetupMonsterCharacter("산성 슬라임(Acid Slime)", 30, 30, 7, 1);         //  NormalMonster, 산성 슬라임(Acid Slime)
+                    Battleloop();
+                    break;
+                case 5:
+                    SetupMonsterCharacter("노예 상인(Slaver)", 70, 70, 5, 3);               //  NormalMonster, 노예 상인(Slaver)
+                    Battleloop();
+                    break;
+                case 6:
+                    SetupMonsterCharacter("방패 그렘린(Shield Gremlin)", 70, 70, 3, 10);     //  NormalMonster, 방패 그렘림(Shiled Gremlin)
+                    Battleloop();
+                    break;
+                case 7:
+                    SetupMonsterCharacter("마법사 그렘린(Gremlin Wizard)", 70, 70, 10, 1);    //  NormalMonster, 마법사 그렘린(Germlin Wizard)
+                    Battleloop();
+                    break;
+                case 8:
+                    SetupMonsterCharacter("갑각 기생충(Shelled Parasite)", 50, 50, 2, 20);       //  NormalMonster, 갑각 기생충(Shelled Parasite)
+                    Battleloop();
+                    break;
+                case 9:
+                    SetupMonsterCharacter("백부장(Centurion)", 80, 80, 12, 7);                 //  NormalMonster, 백부장(Centurion)
+                    Battleloop();
+                    break;
+                case 10:
+                    SetupMonsterCharacter("뱀 식물(Snake Plant)", 55, 55, 8, 6);              //  NormalMonster, 뱀 식물(Snake Plant)
+                    Battleloop();
+                    break;
+            }
+
+        }   //  NormalMonster
+
+        public void EliteMonster()
+        {
+            switch (random.Next(1, 9))
+            {
+                case 1:
+                    SetupMonsterCharacter("귀족 그렘린(Gremlin Nob)", 100, 100, 10, 10);        //  EliteMonster, 귀족 그렘린(Gremlin Nob)
+                    break;
+                case 2:
+                    SetupMonsterCharacter("라가불린(Lagavulin)", 100, 100, 10, 10);            //  EliteMonster, 라가불린(Lagavulin)
+                    break;
+                case 3:
+                    SetupMonsterCharacter("칼부림의 칼(Book of Stabbing)", 80, 80, 20, 5);       //  EliteMonster, 칼부림의 칼(Book of Stabbing)
+                    break;
+                case 4:
+                    SetupMonsterCharacter("그렘린 리더(Gremlin Leader)", 150, 150, 10, 5);         //  EliteMonster, 그렘린 리더(Gremlin Leader)
+                    break;
+                case 5:
+                    SetupMonsterCharacter("노예 관리자(Taskmaster)", 150, 150, 10, 5);         //  EliteMonster, 노예 관리자(Taskmaster)
+                    break;
+                case 6:
+                    SetupMonsterCharacter("거인의 머리(Giant Head)", 200, 200, 10, 20);         //  EliteMonster, 거인의 머리(Giant Head)
+                    break;
+                case 7:
+                    SetupMonsterCharacter("네메시스(Nemesis)", 100, 100, 15, 7);          //  EliteMonster, 네메시스(Nemesis)
+                    break;
+                case 8:
+                    SetupMonsterCharacter("파충류 주술사(Reptomancer)", 80, 80, 30, 15);           //  EliteMonster, 파충류 주술사(Reptomancer)
+                    break;
+            }
+        }
+
+        public void BoossMonster()
+        {
+            SetupMonsterCharacter("대왕 슬라임", 500, 500, 30, 30);
+            Console.ReadLine();
+            Clear();
+        }
+
+        public void Rewarld()
+        {
+            Console.Clear();
+
+            Console.WriteLine("보상");
+
+            switch (random.Next())
             {
                 case 1:
                     break;
@@ -625,78 +781,151 @@ namespace Project._Slay_the_Spire
                     break;
                 case 3:
                     break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-                case 8:
-                    break;
-                case 9:
-                    break;
-                case 10:
-                    break;
-                default:
-                    break;
             }
 
-        }   //  NormalMonster
+            Console.ReadLine();
+        }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public void BattleScreen()
+        public void BattleChoice()
         {
-            Console.Clear();
-
-            BattleUi_Cultist();
-
             Console.SetCursorPosition(90, 20);
-            Console.WriteLine("행동을 선택하세요");
+            Console.WriteLine("{1} 공격");
 
             Console.SetCursorPosition(90, 23);
-            Console.WriteLine("가나다라마바사");
+            Console.WriteLine("{2} 방어");
 
             Console.SetCursorPosition(90, 26);
-            Console.WriteLine("가나다라마바사");
+            Console.WriteLine("{3} 도망");
 
-            Console.SetCursorPosition(90, 29);
-            Console.WriteLine("가나다라마바사");
-
-            Console.ReadLine();
-
+            Console.SetCursorPosition(90, 30);
         }
 
-        public void BattleAction()
+        public void MonsterAction()
         {
+            int value = random.Next(1, 3);
 
+            switch (value)
+            {
+                case 1:
+                    Console.SetCursorPosition(130, 15);
+                    Console.WriteLine("행동 : 공격");        //  몬스터의 행동이 공격일 경우
+                    BattleChoice();
+
+                    int.TryParse(Console.ReadLine(), out userInput);
+
+                    switch (userInput)
+                    {
+                        case 1:     //  내 행동 : 공격
+                            playerHP = playerHP - monsterATK;
+                            monsterHP = monsterHP - playerATK;
+                            Thread.Sleep(30);
+                            break;
+                        case 2:     //  내 행동 : 방어
+                            if (monsterATK > playerDEF)
+                            {
+                                playerHP = playerHP - (monsterATK - playerDEF);
+                                Thread.Sleep(30);
+                            }
+                            else
+                            {
+                                playerHP = playerHP - 0;    //  몬스터의 공격력보다 플레이어이 방어력이 높은 경우
+                            }
+                            break;
+                        case 3:     //  내 행동 : 도망
+                            switch (random.Next(1, 4))
+                            {
+                                case 1:
+                                    playerHP -= random.Next(5, 21);     //  실패 패널티로 체력을 5 ~ 20 만큼 잃음
+                                    playerHP = playerHP - monsterATK;
+                                    break;
+                                case 2:
+                                    playerHP = playerHP - monsterATK;   //  패널티는 없지만 도망치지 못함
+                                    break;
+                                case 3:
+                                    Console.Clear();
+                                    Console.WriteLine("도망침");
+                                    Console.ReadLine();
+                                    Floor++;
+                                    ActionChoice();
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+                case 2:
+                    Console.SetCursorPosition(130, 15);
+                    Console.WriteLine("행동 : 방어");        //  몬스터의 행동이 방어인 경우
+                    BattleChoice();
+
+                    int.TryParse(Console.ReadLine(), out userInput);
+
+                    switch (userInput)
+                    {
+                        case 1:     //  내 행동 : 공격
+                            if (playerATK > monsterDEF)
+                            {
+                                monsterHP = monsterHP - (playerATK - monsterDEF);
+                                Thread.Sleep(30);
+                            }
+                            else
+                            {
+                                monsterHP = monsterHP - 0;      //  플레이어의 공격력보다 몬스터의 방어력이 높은 경우
+                                Thread.Sleep(30);
+                            }
+                            break;
+                        case 2:     //  내 행동 : 방어
+                            // DO nothing
+                            break;
+                        case 3:
+                            switch (userInput)
+                            {
+                                case 1:     //  내 행동 : 공격
+                                    playerHP = playerHP - monsterATK;
+                                    monsterHP = monsterHP - playerATK;
+                                    break;
+                                case 2:     //  내 행동 : 방어
+                                    if (monsterATK > playerDEF)
+                                    {
+                                        playerHP = playerHP - (monsterATK - playerDEF);
+                                    }
+                                    else
+                                    {
+                                        playerHP = playerHP - 0;    //  몬스터의 공격력보다 플레이어이 방어력이 높은 경우
+                                    }
+                                    break;
+                                case 3:     //  내 행동 : 도망
+                                    switch (random.Next(1, 4))
+                                    {
+                                        case 1:
+                                            playerHP -= random.Next(5, 21);     //  실패 패널티로 체력을 5 ~ 20 만큼 잃음
+                                            playerHP = playerHP - monsterATK;
+                                            break;
+                                        case 2:
+                                            playerHP = playerHP - monsterATK;   //  패널티는 없지만 도망치지 못함
+                                            break;
+                                        case 3:
+                                            Console.Clear();
+                                            Console.WriteLine("도망침");
+                                            Console.ReadLine();
+                                            Floor++;
+                                            ActionChoice();
+                                            break;
+                                    }
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+            }
         }
-
-
 
 
         public void BattleUi_Cultist()
         {
+            Console.Clear();
+
             Console.WriteLine("=======================================================================================================================================================================================================");
             Console.WriteLine($"     직업 : {playerNAME}          ♥ : {playerMAXHP} / {playerHP}                         STR : {playerSTR}  DEX : {playerDEX}  INT : {playerINT}  WIS : {playerWIS}  LUCK : {playerLUCK}                                          GOLD : {playerGOLD}");
             Console.WriteLine("=======================================================================================================================================================================================================");
@@ -704,13 +933,14 @@ namespace Project._Slay_the_Spire
             Console.WriteLine("①\n                                                                                                                                                                                                   ");
             Console.WriteLine("②\n                                                                                                                                                                                                   ");
             Console.WriteLine("③\n                                                                                                                                                                                                   ");
-            Console.WriteLine("④\n                                                                                                                                                                                                   ");
-            Console.WriteLine("⑤\n                                                                                                                                                                                                   ");
             Console.WriteLine("=======================================================================================================================================================================================================");
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"\t■■■■■■■■■■■■■■■  ♥ {playerMAXHP} / {playerHP}                                                                                                      ■■■■■■■■■■■■■■■  ♥ {monsterMAXHP} / {monsterHP}\n");
-            Console.WriteLine($"                                                                                                                                                                 {monsterNAME}");
+            Console.WriteLine($"                                                                                                                                                                    {monsterNAME}");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"                    공 : {playerATK} / 방 : {playerDEF}                                                                                                                                  공 : {monsterATK} / 방 : {monsterDEF}");
             Console.ResetColor();
             Console.WriteLine("\t@@@@@@@@@@@@@@@@@@ -;~,.,@~@@@@@@@@@@@@@                                                                                                      ##@#*$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          ");
             Console.WriteLine("\t@@@@@@@@@@@@@@@@@@-. . ,,, @@@@@@@@@@@@@                                                                                                      @@@@**#@@@@@@@@@@@@@@@@@@@@@@@@@@@**=@@@          ");
@@ -744,6 +974,8 @@ namespace Project._Slay_the_Spire
             Console.WriteLine("\t@@@@@@@.,,@@@@@@@@@@@@@@@@@@@@@@.,,@@@@@                                                                                                      @@@@@@@@@@@=;::!;;!*;;;;:;;;;;=##@@@@@@@          ");
             Console.WriteLine("\t@@@@@@..,.:@@@@@@@@@@@@@@@@@@@@@$,.. @@@                                                                                                      @@@@@@@@@@@@#=~*!=#*~!*=;;;;*=#@@@@@@@@@          ");
             Console.WriteLine("\t@@@@@@=:$@=@@@@@@@@@@@@@@@@@@@@@#::#!@@@                                                                                                      @@@@@@@@@@@@@@~*###=-;###==###@@@@@@@@@@          ");
+
+            MonsterAction();
         }
 
 
